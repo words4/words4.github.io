@@ -1,17 +1,11 @@
 ---
-header_brand: "WORDS 4"
-header_tagline_paragraph: "Learn, Communicate, and Live"
-header_button_cta:
-  url: ""
-  title: "START A CHAPTER"
-teaser_image: "images/Words4_Group_Photo_Horizontal.jpg" # https://www.pexels.com/search/product%20testing/
+teaser_image: "images/Words4_Group_Photo_Horizontal.jpg"
 ---
 
-> Our mission is to improve rates of literacy among youth and adults in Hawaii, striving for educational equity and a better future for all.
+![Words4 Team Group Photo](images/Words4_Group_Photo_Horizontal.jpg "Meet our team")
+Learn, Communicate, and Live
 
-| Views | Videos | Students | Partners |
-| :---: | :---: | :---: | :---: |
-| 99,800+ | 70+ | 1,000+ | 6 |
+> Our mission is to improve rates of literacy among youth and adults in Hawaii, striving for educational equity and a better future for all.
 
 ## Surreal and Shocking Statistics
 

@@ -12,6 +12,16 @@ html {
   font-size: 100%;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
@@ -46,9 +56,11 @@ a:focus {
    ============================ */
 
 main#content {
+  flex: 1;
   max-width: 72rem;
   margin: 0 auto;
   padding: 2rem 1rem;
+  width: 100%;
 }
 
 /* ============================
@@ -156,13 +168,14 @@ ol {
    HOME PAGE
    ============================ */
 
-.home {
+.home > img {
   text-align: center;
 }
 
 .home h1 {
   margin-top: 0;
 }
+
 
 /* ============================
    LIST / SECTION PAGES
@@ -184,6 +197,62 @@ ol {
 }
 
 /* ============================
+   BLOCK QUOTES
+   ============================ */
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #ccc;
+  color: #555;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* ============================
+   TABLES
+   ============================ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+th {
+  font-weight: 600;
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+tbody tr:hover {
+  background-color: #f0f6ff;
+}
+
+/* Improve readability for long text */
+td p {
+  margin: 0;
+}
+
+/* ============================
    SINGLE CONTENT PAGES
    ============================ */
 
@@ -199,7 +268,6 @@ ol {
 .site-footer {
   background: #f8f8f8;
   border-top: 1px solid #e5e5e5;
-  margin-top: 4rem;
 }
 
 .footer-inner {
