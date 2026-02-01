@@ -1,0 +1,39 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Words4'
+sectionPagesMenu = 'main'
+
+[params]
+  title = "Words4"
+  description = "Words4 website"
+
+  organizationId = "Words4 Inc"
+  nonprofitStatus = "501(c)(3) Nonprofit Organization"
+  taxId = "85-2284025"
+
+[menus]
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+  [[build.cachebusters]]
+    source = '(postcss|tailwind)\.config\.js'
+    target = 'css'
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'

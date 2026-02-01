@@ -1,0 +1,40 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+
+    <!-- Organization Info -->
+    <section class="footer-brand">
+      <strong>{{ .Site.Title }}</strong>
+      {{ with .Site.Params.footerTagline }}
+        <p>{{ . }}</p>
+      {{ end }}
+    </section>
+
+    <!-- Footer Navigation -->
+    {{ with .Site.Menus.footer }}
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        {{ range . }}
+          <li>
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+    {{ end }}
+
+    <!-- Legal / Transparency -->
+    <section class="footer-legal">
+      <p>
+        © {{ now.Year }} {{ .Site.Params.organizationId }}.
+        {{ with .Site.Params.nonprofitStatus }}
+          <span>{{ . }}</span>
+        {{ end }}
+      </p>
+
+      {{ with .Site.Params.taxId }}
+        <p>Tax ID: {{ . }}</p>
+      {{ end }}
+    </section>
+
+  </div>
+</footer>

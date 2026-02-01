@@ -1,0 +1,3 @@
+[submodule "themes/product-launch"]
+	path = themes/product-launch
+	url = https://github.com/janraasch/hugo-product-launch.git

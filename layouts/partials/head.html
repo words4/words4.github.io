@@ -1,0 +1,42 @@
+{{- /* ===== Basic Metadata ===== */ -}}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+{{- /* ===== Canonical URL ===== */ -}}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{- /* ===== Open Graph ===== */ -}}
+<meta property="og:title" content="{{ .Title | default .Site.Title }}">
+<meta property="og:description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with .Params.images }}
+<meta property="og:image" content="{{ index . 0 | absURL }}">
+{{ end }}
+
+{{- /* ===== Twitter Cards ===== */ -}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+<meta name="twitter:description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+{{- /* ===== CSS (Hugo Pipes) ===== */ -}}
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{- /* ===== Favicon ===== */ -}}
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+{{- /* ===== RSS ===== */ -}}
+{{ with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+{{ end }}
+
+{{- /* ===== Optional Analytics (Privacy-Friendly) ===== */ -}}
+{{ with .Site.Params.analytics }}
+<script defer src="{{ . }}"></script>
+{{ end }}

@@ -1,0 +1,40 @@
+<header class="topbar" role="banner">
+  <div class="topbar-inner">
+
+    <!-- Logo / Site Title -->
+    <div class="brand">
+      <a href="{{ .Site.Home.RelPermalink }}">
+        {{ with .Site.Params.logo }}
+          <img src="{{ . }}" alt="{{ $.Site.Title }} logo">
+        {{ else }}
+          <span class="site-title">{{ .Site.Title }}</span>
+        {{ end }}
+      </a>
+    </div>
+
+    <!-- Primary Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        {{ range .Site.Menus.main }}
+          <li class="nav-item">
+            <a
+              href="{{ .URL }}"
+              class="nav-link {{ if $.IsMenuCurrent "main" . }}is-active{{ end }}"
+              {{ if .Page }}aria-current="page"{{ end }}
+            >
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    <!-- CTA -->
+    {{ with .Site.Params.donateURL }}
+      <div class="topbar-cta">
+        <a href="{{ . }}" class="donate-button">Donate</a>
+      </div>
+    {{ end }}
+
+  </div>
+</header>
