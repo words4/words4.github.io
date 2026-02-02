@@ -1,9 +1,7 @@
----
-teaser_image: "images/Words4_Group_Photo_Horizontal.jpg"
----
+# Words4 Hawaii
 
 ![Words4 Team Group Photo](images/Words4_Group_Photo_Horizontal.jpg "Meet our team")
-Learn, Communicate, and Live
+*Learn, Communicate, and Live*
 
 > Our mission is to improve rates of literacy among youth and adults in Hawaii, striving for educational equity and a better future for all.
 

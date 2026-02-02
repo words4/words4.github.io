@@ -7,6 +7,9 @@ sectionPagesMenu = 'main'
   title = "Words4"
   description = "Words4 website"
 
+  # Keywords help the website appear higher in google
+  keywords="Education Literacy Hawaii"
+
   organizationId = "Words4 Inc"
   nonprofitStatus = "501(c)(3) Nonprofit Organization"
   taxId = "85-2284025"
