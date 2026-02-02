@@ -1,6 +1,6 @@
 +++
 date = '2026-02-01T11:18:36-10:00'
-draft = true
+draft = false
 title = 'High School'
 +++
 
