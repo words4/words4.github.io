@@ -6,5 +6,11 @@ title = 'Partners'
 
 ## Words4 is delighted to partner with and serve
 
-- Punahou
+- Punahou School
+- Mayknoll School
+
+- Kahauiki Village
+
 - Waikiki Elementary
+- Nu’uanu Elementary School
+- Manoa Elementary School

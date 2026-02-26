@@ -5,6 +5,13 @@
 
 > Our mission is to improve rates of literacy among youth and adults in Hawaii, striving for educational equity and a better future for all.
 
+{{< statistic-block >}}
+    {{< statistic-figure title="Views" data="99,800+" >}}
+    {{< statistic-figure title="Videos" data="70+" >}}
+    {{< statistic-figure title="Students" data="1,000+" >}}
+    {{< statistic-figure title="Partners" data="6" >}}
+{{< /statistic-block >}}
+
 ## Surreal and Shocking Statistics
 
 **1 in 6 adults** are functionally illiterate in Hawaii
@@ -15,13 +22,10 @@ For every $1 a literate person earns in Hawaii, an illiterate counterpart **earn
 
 Hawaii is the eight lowest state with regards to public library concentration (3.5 per 100,000).
 
-## Read-alouds
-
 ## Testimonial
 > Words4 made my kids excited about reading again, and I am eternally grateful
 
 - A.R, Mother of two young boys (Aged 5 and 7)
-
 
 ## Interested in Joining Words4?
 Today, Words4 is working to expand throughout the islands of Hawaii. We are working to eliminate illiteracy by serving Hawaiian students and their families

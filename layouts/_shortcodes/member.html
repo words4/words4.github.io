@@ -1,0 +1,10 @@
+{{ $name := .Get "name" }}
+{{ $role := .Get "role" }}
+{{ $img_path := .Get "img_path" }}
+{{ $description := .Get "description" }}
+<div class="member">
+  {{ $name }}
+  {{ $role }}
+  <img src="{{ $img_path }}">
+  {{ $description }}
+</div>

@@ -27,3 +27,12 @@ sectionPagesMenu = 'main'
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+# Allow embedding and special elements to be added to the markdown
+[security]
+  enableInlineShortcodes = true
+
+[privacy]
+  [privacy.instagram]
+    disable = false
+    simple = false

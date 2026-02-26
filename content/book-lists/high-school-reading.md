@@ -9,10 +9,10 @@ title = 'High School'
 | Lord of the Flies	| William Golding |
 | Catcher in the Rye | J.D, Salinger |
 | Jane Eyre	Charlotte | Bronte |
-| Wuthering Heights | Emily Bronte |
-| Tale of two ciites | Charles Dickens |
+| Withering Heights | Emily Bronte |
+| Tale of Two Cites | Charles Dickens |
 | Oliver Twist | Charles Dickens |
-| And then there were none | Agatha Christie |
+| And Then There Were None | Agatha Christie |
 | Tom Sawyer | Mark Twain |
 | The Adventures of Huckleberry Finn | Mark Twain
 | The Alchemist	| Paulo Cohelo |
@@ -22,7 +22,7 @@ title = 'High School'
 | Animal Farm | George Orwell |
 | Pride and Prejudice | Jane Austin |
 | The Great Gatsby | F. Scott Fitzgerald |
-| Farenheit 451	| Ray Bradbury |
+| Fahrenheit 451	| Ray Bradbury |
 | The Pearl	| John Steinbeck |
 | Grapes of Wrath | John Steinbeck |
 | Of Mice and Men | John Steinbeck |
