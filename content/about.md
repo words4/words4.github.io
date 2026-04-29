@@ -22,10 +22,10 @@ Recognizing the challenging access to literary resources in Hawaii—like books 
 *Member of the Board*
 
 ### Neal Sehgal
-*President*
+*Co-President*
 
 ### Steven Yang
-*President*
+*Co-President*
 
 ### Kolby Chun
 *Vice President*
