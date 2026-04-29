@@ -345,3 +345,83 @@ td p {
     padding: 1.5rem 1rem;
   }
 }
+
+/* ============================
+   STATISTICS BLOCK
+   ============================ */
+
+.statistic-block {
+  margin: 3rem 0;
+  padding: 1.5rem 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+
+  background: #f8f8f8;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+/* Individual stat */
+.statistic-figure {
+  text-align: center;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  border-radius: 6px;
+
+  /* Animation base state */
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+
+  animation: stat-fade-in 0.6s ease forwards;
+}
+
+/* Staggered animation (feels like counting progression) */
+.statistic-figure:nth-child(1) { animation-delay: 0.1s; }
+.statistic-figure:nth-child(2) { animation-delay: 0.2s; }
+.statistic-figure:nth-child(3) { animation-delay: 0.3s; }
+.statistic-figure:nth-child(4) { animation-delay: 0.4s; }
+
+/* Number styling */
+.statistic-data {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #e63946;
+
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Label styling */
+.statistic-title {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Hover interaction (gives “alive” feeling) */
+.statistic-figure:hover .statistic-data {
+  transform: scale(1.08);
+  color: #c92f3d;
+}
+
+/* Entry animation */
+@keyframes stat-fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+
+@media (max-width: 640px) {
+  .statistic-block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

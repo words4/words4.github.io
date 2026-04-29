@@ -1,7 +1,0 @@
-{{ $title := .Get "title" }}
-{{ $data := .Get "data" }}
-{{ with .Parent }}
-  <div class="statistic-figure">
-    {{ $title }}: {{ $data }}
-  </div>
-{{ end }}
