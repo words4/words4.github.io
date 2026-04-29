@@ -33,7 +33,7 @@ Recognizing the challenging access to literary resources in Hawaii—like books 
 ### Paige Goya
 *General Director*
 
-### Owen Roe
+### Solana Brennan
 *General Director*
 
 ### Janiah Yago
